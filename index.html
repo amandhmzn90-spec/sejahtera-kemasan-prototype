@@ -1,0 +1,1564 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CV SEJAHTERA KEMASAN | Pabrik & Manufaktur Paper Core & Paper Tube Presisi</title>
+  
+  <!-- Fonts & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#825420",
+            "primary-container": "#c28b52",
+            "on-primary": "#ffffff",
+            "on-primary-container": "#472700",
+            "secondary": "#5a605c",
+            "secondary-container": "#fd761a",
+            "secondary-fixed": "#ffdbca",
+            "on-secondary": "#ffffff",
+            "surface": "#fcf9f4",
+            "surface-dim": "#dcdad5",
+            "surface-bright": "#fcf9f4",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f6f3ee",
+            "surface-container": "#f0ede9",
+            "surface-container-high": "#ebe8e3",
+            "surface-container-highest": "#e5e2dd",
+            "on-surface": "#1c1c19",
+            "on-surface-variant": "#51453a",
+            "outline": "#837468",
+            "outline-variant": "#d5c3b5",
+            "navy-deep": "#1a2530",
+            "navy-structure": "#223344",
+            "border-subtle": "#E2E8F0",
+            "border-structural": "#CBD5E1"
+          },
+          fontFamily: {
+            "display-hero": ["Hanken Grotesk", "sans-serif"],
+            "headline-lg": ["Hanken Grotesk", "sans-serif"],
+            "headline-md": ["Hanken Grotesk", "sans-serif"],
+            "headline-sm": ["Hanken Grotesk", "sans-serif"],
+            "title-lg": ["Hanken Grotesk", "sans-serif"],
+            "title-md": ["Hanken Grotesk", "sans-serif"],
+            "body-lg": ["Manrope", "sans-serif"],
+            "body-md": ["Manrope", "sans-serif"],
+            "body-sm": ["Manrope", "sans-serif"],
+            "label-caps": ["Hanken Grotesk", "sans-serif"],
+            "label-pill": ["Hanken Grotesk", "sans-serif"]
+          },
+          animation: {
+            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'float': 'float 4s ease-in-out infinite',
+            'shimmer': 'shimmer 2.5s infinite linear'
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-10px)' },
+            },
+            shimmer: {
+              '0%': { backgroundPosition: '-200% 0' },
+              '100%': { backgroundPosition: '200% 0' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    
+    .blueprint-grid {
+      background-size: 32px 32px;
+      background-image: 
+        linear-gradient(to right, rgba(203, 213, 225, 0.3) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(203, 213, 225, 0.3) 1px, transparent 1px);
+    }
+
+    /* Glassmorphism & Custom Effects */
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    
+    .glass-card {
+      background: rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    /* Scroll animations classes */
+    .reveal-on-scroll {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+
+    .reveal-on-scroll.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Tilt Card Container styling */
+    .tilt-card {
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+      transform-style: preserve-3d;
+    }
+
+    /* Active Nav link indicator */
+    .nav-link.active {
+      color: #fd761a;
+      position: relative;
+    }
+
+    .nav-link.active::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 100%;
+      height: 2.5px;
+      background-color: #fd761a;
+      border-radius: 99px;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #fd761a;
+    }
+  </style>
+</head>
+
+<body class="bg-[#fcf9f4] text-[#1c1c19] font-body-md antialiased selection:bg-secondary-container selection:text-white relative overflow-x-hidden">
+
+  <!-- TOP UTILITY ANNOUNCEMENT BAR -->
+  <div class="bg-navy-deep text-white text-[12px] sm:text-xs py-2 px-4 border-b border-navy-structure font-medium tracking-wide relative z-50">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2 flex-wrap justify-center sm:justify-start">
+        <span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span>Shift Operasional Pabrik: <strong>Senin – Sabtu 08:00 - 17:00 WIB</strong></span>
+        <span class="hidden md:inline text-slate-500">|</span>
+        <span class="hidden md:inline">Hotline Dispatch: <a class="hover:text-secondary-fixed underline decoration-secondary-container underline-offset-2 transition-colors" href="tel:+6281234567890">+62 812-3456-7890</a></span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-300 font-semibold text-[11px] border border-amber-400/30 shadow-inner">
+          ⚡ Produsen Langsung Tangan Pertama
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-40 glass-nav border-b border-slate-200/80 shadow-sm transition-all duration-300" id="navbar">
+    <div class="flex justify-between items-center w-full max-w-7xl mx-auto px-4 sm:px-6 py-3.5">
+      <!-- Brand Logo -->
+      <a class="flex items-center gap-3 group" href="#hero">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-600 via-primary to-navy-deep flex items-center justify-center text-white shadow-md shadow-amber-900/20 group-hover:scale-105 group-hover:rotate-6 transition-all duration-300">
+          <span class="material-symbols-outlined text-2xl animate-spin-slow">cyclone</span>
+        </div>
+        <div class="leading-tight">
+          <span class="text-base sm:text-lg md:text-xl font-black tracking-tight text-navy-deep block font-headline-sm">
+            CV SEJAHTERA KEMASAN
+          </span>
+          <span class="text-[10px] sm:text-[10.5px] uppercase tracking-wider font-extrabold text-primary block">
+            Paper Core & Tube Manufacturer
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center space-x-7 text-sm font-bold text-slate-700">
+        <a class="nav-link hover:text-secondary-container transition-colors py-1" href="#tentang">Tentang Pabrik</a>
+        <a class="nav-link hover:text-secondary-container transition-colors py-1" href="#lini-produk">Lini Produk</a>
+        <a class="nav-link hover:text-secondary-container transition-colors py-1" href="#kalkulator-rfq">Kalkulator RFQ</a>
+        <a class="nav-link hover:text-secondary-container transition-colors py-1" href="#alur-pemesanan">Alur Pemesanan</a>
+        <a class="nav-link hover:text-secondary-container transition-colors py-1" href="#keunggulan">Standar Mutu</a>
+        <a class="nav-link hover:text-secondary-container transition-colors py-1" href="#faq">FAQ</a>
+      </nav>
+
+      <!-- Trailing Action Button & Mobile Toggle -->
+      <div class="flex items-center gap-3">
+        <a class="hidden sm:inline-flex group items-center gap-2.5 pl-4 pr-1.5 py-1.5 rounded-full bg-white border border-slate-300 shadow-sm hover:border-secondary-container hover:shadow-md transition-all duration-300" href="#kalkulator-rfq">
+          <span class="text-xs font-bold text-navy-deep">Minta Penawaran</span>
+          <span class="w-7 h-7 rounded-full bg-secondary-container text-white flex items-center justify-center transition-transform duration-300 group-hover:rotate-45 shadow">
+            <span class="material-symbols-outlined text-[15px]">north_east</span>
+          </span>
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-navy-deep transition-colors focus:outline-none" aria-label="Toggle Mobile Menu">
+          <span class="material-symbols-outlined text-2xl" id="menu-icon">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-drawer" class="hidden lg:hidden bg-white/95 backdrop-blur-xl border-b border-slate-200 px-6 py-6 transition-all duration-300 shadow-xl">
+      <nav class="flex flex-col space-y-4 text-base font-bold text-slate-800">
+        <a class="mobile-nav-link hover:text-secondary-container transition-colors border-b border-slate-100 pb-2" href="#tentang">Tentang Pabrik</a>
+        <a class="mobile-nav-link hover:text-secondary-container transition-colors border-b border-slate-100 pb-2" href="#lini-produk">Lini Produk</a>
+        <a class="mobile-nav-link hover:text-secondary-container transition-colors border-b border-slate-100 pb-2" href="#kalkulator-rfq">Kalkulator RFQ & Visualizer</a>
+        <a class="mobile-nav-link hover:text-secondary-container transition-colors border-b border-slate-100 pb-2" href="#alur-pemesanan">Alur Pemesanan</a>
+        <a class="mobile-nav-link hover:text-secondary-container transition-colors border-b border-slate-100 pb-2" href="#keunggulan">Standar Mutu</a>
+        <a class="mobile-nav-link hover:text-secondary-container transition-colors border-b border-slate-100 pb-2" href="#faq">FAQ & Testimoni</a>
+        <a class="inline-flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-secondary-container text-white font-bold text-center shadow-lg mt-2" href="#kalkulator-rfq">
+          <span>Minta Penawaran Quick RFQ</span>
+          <span class="material-symbols-outlined text-sm">north_east</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative pt-6 pb-16 md:pt-8 md:pb-24 overflow-hidden" id="hero">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="relative rounded-2xl md:rounded-3xl overflow-hidden min-h-[600px] md:min-h-[640px] flex flex-col justify-between p-6 sm:p-10 md:p-16 border border-slate-200 bg-slate-900 shadow-2xl group">
+        
+        <!-- Hero Background Visual -->
+        <div class="absolute inset-0 z-0 overflow-hidden">
+          <img alt="Pabrik spiral winder paper core berkecepatan tinggi" class="w-full h-full object-cover object-center brightness-75 contrast-105 filter scale-105 group-hover:scale-100 transition-transform duration-1000 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiUP15GkZJVj5Ji7eP9cKRavow63pe-lq-lwuPwblivBNHnIcMFChdmEEHArMfJQRzuYx9zZG0h-7z4HlWQJBXQxQ_HkdERx3VJKZ41sD9_VCkyP3tTMMgp3Dqn-3K7MDI5gOktbaTgNDxfuNOw_MFZsKzas7LvrIgek7bIcyh2NirQi4Ewx5lAXeROu2tslr7cTWiaVgnDqioox-HaGltcw5UqZqMIZRkumvOKYxGbtC77_o29I_p"/>
+          <div class="absolute inset-0 bg-gradient-to-r from-navy-deep/95 via-navy-deep/85 to-navy-deep/40"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-navy-deep via-transparent to-transparent"></div>
+        </div>
+
+        <!-- Hero Content Top -->
+        <div class="relative z-10 max-w-3xl space-y-6 pt-2 reveal-on-scroll">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/20 text-white text-xs font-semibold shadow-inner">
+            <span class="w-2 h-2 rounded-full bg-secondary-container animate-ping"></span>
+            Pabrik &amp; Produsen Langsung Spesialis Paper Core
+          </div>
+
+          <h1 class="text-3xl sm:text-5xl md:text-6xl font-black text-white tracking-tight leading-[1.12]">
+            Solusi Kemasan Tabung <br/>
+            <span class="text-amber-400 font-extrabold underline decoration-secondary-container decoration-wavy decoration-2 underline-offset-8 inline-block transform hover:scale-[1.02] transition-transform">
+              Paper Core & Paper Tube
+            </span> Presisi
+          </h1>
+
+          <p class="text-slate-200 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl font-normal">
+            Spesialis manufaktur selongsong karton spiral berkualitas tinggi dengan akurasi dimensi milimeter. Melayani kustomisasi penuh diameter, ketebalan, dan panjang tabung serta lini ready-stock skala industri.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="pt-4 flex flex-wrap items-center gap-4">
+            <a class="group inline-flex items-center gap-3 pl-6 pr-2.5 py-3 rounded-full bg-secondary-container text-white font-bold shadow-lg hover:bg-orange-600 hover:shadow-orange-500/25 transition-all duration-300 active:scale-95" href="#kalkulator-rfq">
+              <span>Hitung Estimasi RFQ</span>
+              <span class="w-8 h-8 rounded-full bg-white/20 text-white flex items-center justify-center transition-transform duration-300 group-hover:rotate-45">
+                <span class="material-symbols-outlined text-[17px]">north_east</span>
+              </span>
+            </a>
+            <a class="group inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-white/15 backdrop-blur-md border border-white/30 text-white font-semibold hover:bg-white hover:text-navy-deep transition-all duration-300" href="#lini-produk">
+              <span>Lihat Lini Produk</span>
+              <span class="material-symbols-outlined text-sm transition-transform duration-300 group-hover:translate-y-1">expand_more</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Metrics Strip with Live Animated Counters -->
+        <div class="relative z-10 pt-10 md:pt-14 border-t border-white/15 mt-auto reveal-on-scroll">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 bg-navy-deep/80 backdrop-blur-md p-4 sm:p-6 rounded-2xl border border-white/15 shadow-xl">
+            <div class="px-2 md:px-4 border-r border-white/15">
+              <span class="text-2xl sm:text-4xl font-black text-white block tracking-tight font-headline-md">
+                <span class="counter" data-target="50000">0</span>+
+              </span>
+              <span class="text-xs text-amber-300 font-semibold">Tube / Hari (Kapasitas)</span>
+            </div>
+            <div class="px-2 md:px-4 md:border-r border-white/15">
+              <span class="text-2xl sm:text-4xl font-black text-white block tracking-tight font-headline-md">
+                <span class="counter" data-target="100">0</span>+
+              </span>
+              <span class="text-xs text-slate-300 font-medium">Mitra Industri Aktif</span>
+            </div>
+            <div class="px-2 md:px-4 border-r border-white/15">
+              <span class="text-2xl sm:text-4xl font-black text-white block tracking-tight font-headline-md">
+                ±<span class="counter-float" data-target="0.5">0.0</span> mm
+              </span>
+              <span class="text-xs text-amber-300 font-semibold">Toleransi Presisi Dimensi</span>
+            </div>
+            <div class="px-2 md:px-4">
+              <span class="text-2xl sm:text-4xl font-black text-white block tracking-tight font-headline-md">
+                <span class="counter" data-target="100">0</span>%
+              </span>
+              <span class="text-xs text-slate-300 font-medium">Recyclable Kraft Fiber</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGO TICKER / MITRA INDUSTRI -->
+  <section class="border-y border-slate-200 bg-white py-8" id="tentang">
+    <div class="max-w-7xl mx-auto px-6">
+      <p class="text-center text-xs uppercase font-extrabold tracking-widest text-slate-400 mb-6">
+        Dipercaya Sebagai Rantai Pasok Utama Lintas Industri Nasional
+      </p>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 items-center justify-center">
+        <div class="flex items-center justify-center gap-2 text-slate-700 font-bold text-xs sm:text-sm border border-slate-200/80 rounded-xl py-3 px-3 bg-slate-50 hover:border-secondary-container hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+          <span class="material-symbols-outlined text-secondary-container">inventory_2</span> Pabrik Lakban
+        </div>
+        <div class="flex items-center justify-center gap-2 text-slate-700 font-bold text-xs sm:text-sm border border-slate-200/80 rounded-xl py-3 px-3 bg-slate-50 hover:border-secondary-container hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+          <span class="material-symbols-outlined text-secondary-container">texture</span> Industri Tekstil
+        </div>
+        <div class="flex items-center justify-center gap-2 text-slate-700 font-bold text-xs sm:text-sm border border-slate-200/80 rounded-xl py-3 px-3 bg-slate-50 hover:border-secondary-container hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+          <span class="material-symbols-outlined text-secondary-container">sports_tennis</span> Produsen Kok
+        </div>
+        <div class="flex items-center justify-center gap-2 text-slate-700 font-bold text-xs sm:text-sm border border-slate-200/80 rounded-xl py-3 px-3 bg-slate-50 hover:border-secondary-container hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+          <span class="material-symbols-outlined text-secondary-container">layers</span> Flexible Packaging
+        </div>
+        <div class="flex items-center justify-center gap-2 text-slate-700 font-bold text-xs sm:text-sm border border-slate-200/80 rounded-xl py-3 px-3 bg-slate-50 hover:border-secondary-container hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+          <span class="material-symbols-outlined text-secondary-container">print</span> Percetakan Roll
+        </div>
+        <div class="flex items-center justify-center gap-2 text-slate-700 font-bold text-xs sm:text-sm border border-slate-200/80 rounded-xl py-3 px-3 bg-slate-50 hover:border-secondary-container hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+          <span class="material-symbols-outlined text-secondary-container">local_shipping</span> Logistik Nasional
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LINI PRODUK (Interactive Bento Grid) -->
+  <section class="py-20 bg-[#fcf9f4]" id="lini-produk">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6 reveal-on-scroll">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-primary text-xs font-bold mb-3 border border-amber-200">
+            <span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+            Katalog Produk Unggulan
+          </div>
+          <h2 class="text-3xl md:text-4xl font-black text-navy-deep tracking-tight">
+            4 Solusi Utama Kemasan Tabung & Paper Core
+          </h2>
+          <p class="text-slate-600 text-base mt-2.5 max-w-2xl">
+            Dari kemasan ritel berstiker hingga inti selongsong beban berat untuk mesin rotasi pabrik berskala besar.
+          </p>
+        </div>
+        <a class="group inline-flex items-center gap-3 pl-5 pr-2 py-2 rounded-full bg-white border border-slate-300 hover:border-secondary-container hover:shadow-md transition-all duration-300" href="#kalkulator-rfq">
+          <span class="text-xs font-bold text-navy-deep">Konsultasi Spesifikasi</span>
+          <span class="w-7 h-7 rounded-full bg-secondary-container text-white flex items-center justify-center transition-transform group-hover:rotate-45">
+            <span class="material-symbols-outlined text-[15px]">north_east</span>
+          </span>
+        </a>
+      </div>
+
+      <!-- 4-Card Service Grid with Tilt Effect -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Card 1: Celengan Tabung Karton -->
+        <div class="tilt-card group rounded-2xl overflow-hidden bg-white border border-slate-200 hover:border-amber-500/50 transition-all duration-500 hover:shadow-2xl flex flex-col reveal-on-scroll">
+          <div class="relative h-64 w-full overflow-hidden bg-amber-50">
+            <img alt="Celengan tabung karton kraft" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsXJPoVbV0BL8POcz-IjvU1t8KkR1zE7rxzlX6ST3OleDGaSLfIk823z6xDC8VpSp6XSucHVW2ca7X3ZK-UkRPB6AngGrgWuEXa3ov2n_LrPbqvw0sClKG8AcbC1nz1ax-xE6SEnjDAh09G-C2jPYjGB9UK4URjsVIUIQzuQ2oAHIGJTF7X76hWVo_rp_eCZAh3lrE57-_pidzDcn3eSAiuQ4QJx_p9dwgyNBHEiOo0-pn7ZK4XSzw"/>
+            <div class="absolute top-4 left-4">
+              <span class="px-3 py-1 rounded-full bg-white/95 backdrop-blur-md text-navy-deep text-xs font-extrabold shadow-sm border border-slate-200">
+                Consumer & Retail Packaging
+              </span>
+            </div>
+            <div class="absolute bottom-4 left-4 right-4 z-10">
+              <h3 class="text-2xl font-black text-white drop-shadow-md">Celengan Tabung Karton</h3>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-navy-deep/85 via-transparent to-transparent pointer-events-none"></div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Cocok untuk merchandise korporat, media promosi perbankan/koperasi, yayasan sosial, dan produk edukasi menabung.
+            </p>
+            <div class="grid grid-cols-3 gap-2 text-xs border-t border-slate-100 pt-4 bg-slate-50/80 p-3 rounded-xl">
+              <div>
+                <span class="text-slate-400 font-bold block uppercase text-[10px]">Pilihan Diameter</span>
+                <span class="text-navy-deep font-bold">7cm, 8.5cm, 10cm</span>
+              </div>
+              <div>
+                <span class="text-slate-400 font-bold block uppercase text-[10px]">Tipe Tutup</span>
+                <span class="text-navy-deep font-bold">Seng Paten / Buka</span>
+              </div>
+              <div>
+                <span class="text-slate-400 font-bold block uppercase text-[10px]">Finishing</span>
+                <span class="text-navy-deep font-bold">Kraft / Sticker</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Wadah / Selongsong Kok Badminton -->
+        <div class="tilt-card group rounded-2xl overflow-hidden bg-white border border-slate-200 hover:border-amber-500/50 transition-all duration-500 hover:shadow-2xl flex flex-col reveal-on-scroll">
+          <div class="relative h-64 w-full overflow-hidden bg-amber-50">
+            <img alt="Selongsong tabung kok badminton" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuafYnpbDf31w7MM0jtjt9bSnpAed7L8kQH70lyhjndwO2n6qN2Refr1klR3Ca7mz3EfwOGhU4VaJ-k4hWG-H6cDwnhNgPqJaE-Y8TndY_d6DSY-HByOzJxLsMGNH5VvysfpziLl_VLMS5JTgr7HwQ3shdQLu8RPGG0HrS33xiwpq1exAA7x_PnvmdcM7HkK-YMwEpiIdRKPfykXXGz3FlU7iW9cNs9U354XTPxr1J8gas_U8BpxMD"/>
+            <div class="absolute top-4 left-4">
+              <span class="px-3 py-1 rounded-full bg-white/95 backdrop-blur-md text-navy-deep text-xs font-extrabold shadow-sm border border-slate-200">
+                Sports Equipment Packaging
+              </span>
+            </div>
+            <div class="absolute bottom-4 left-4 right-4 z-10">
+              <h3 class="text-2xl font-black text-white drop-shadow-md">Wadah Selongsong Kok Badminton</h3>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-navy-deep/85 via-transparent to-transparent pointer-events-none"></div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Dirancang khusus menjaga kestabilan aerodinamis bulu unggas dan kelembaban ideal shuttlecock selama rantai pengiriman.
+            </p>
+            <div class="grid grid-cols-3 gap-2 text-xs border-t border-slate-100 pt-4 bg-slate-50/80 p-3 rounded-xl">
+              <div>
+                <span class="text-slate-400 font-bold block uppercase text-[10px]">Standar Ukuran</span>
+                <span class="text-navy-deep font-bold">ID 6.5 cm – 6.7 cm</span>
+              </div>
+              <div>
+                <span class="text-slate-400 font-bold block uppercase text-[10px]">Kapasitas Isi</span>
+                <span class="text-navy-deep font-bold">Isi 12 & Isi 6</span>
+              </div>
+              <div>
+                <span class="text-slate-400 font-bold block uppercase text-[10px]">Tutup Kaleng</span>
+                <span class="text-navy-deep font-bold">Seng Anti Karat</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Mailing & Protective Packing Tube -->
+        <div class="tilt-card group rounded-2xl overflow-hidden bg-white border border-slate-200 hover:border-amber-500/50 transition-all duration-500 hover:shadow-2xl flex flex-col reveal-on-scroll">
+          <div class="relative h-64 w-full overflow-hidden bg-amber-50">
+            <img alt="Mailing tube kemasan proteksi cetak blueprint" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkpoBZ0dq02ddw8xuVtGJhycVdXuRxHAL0ZRbW8sk-FyLuoEZv32C3lSAnJiWFv_m-ovRjuqVkhtTXpqiq4h9JpCEHKgtGIdOJWa_bOvAmkiZllixDrZWO1lJ2dQPIKBvn_-H7PVt4lNI9YaqJxCCW12CO49L-o1Y_ZcNwT46yel0fcJwGscIVAdn7pVqN3D5wFrqXyr9s0AocA6drrP7ImgS8XZstTjo4Ab489pIWVmHaEDpqON2U"/>
+            <div class="absolute top-4 left-4">
+              <span class="px-3 py-1 rounded-full bg-white/95 backdrop-blur-md text-navy-deep text-xs font-extrabold shadow-sm border border-slate-200">
+                Document & Art Shipping Tube
+              </span>
+            </div>
+            <div class="absolute bottom-4 left-4 right-4 z-10">
+              <h3 class="text-2xl font-black text-white drop-shadow-md">Mailing & Protective Tube</h3>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-navy-deep/85 via-transparent to-transparent pointer-events-none"></div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Pelindung silinder tebal anti tekuk untuk pengiriman dokumen arsitek, cetakan galeri kanvas, peta, dan material gulung ekspedisi.
+            </p>
+            <div class="grid grid-cols-3 gap-2 text-xs border-t border-slate-100 pt-4 bg-slate-50/80 p-3 rounded-xl">
+              <div>
+                <span class="text-slate-400 font-bold block uppercase text-[10px]">Ketebalan Dinding</span>
+                <span class="text-navy-deep font-bold">2 mm – 5 mm</span>
+              </div>
+              <div>
+                <span class="text-slate-400 font-bold block uppercase text-[10px]">Rentang Panjang</span>
+                <span class="text-navy-deep font-bold">s/d 250 cm</span>
+              </div>
+              <div>
+                <span class="text-slate-400 font-bold block uppercase text-[10px]">End Cap</span>
+                <span class="text-navy-deep font-bold">Plastic Plug Lock</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Heavy Duty Paper Core Industri -->
+        <div class="tilt-card group rounded-2xl overflow-hidden bg-white border border-slate-200 hover:border-amber-500/50 transition-all duration-500 hover:shadow-2xl flex flex-col reveal-on-scroll">
+          <div class="relative h-64 w-full overflow-hidden bg-amber-50">
+            <img alt="Selongsong kertas heavy duty paper core" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOKZHLeFvJGQyukPxetQNCSd-gPQukyH_ke8uiBRKK3N7F-8oSGOyi331unxpKxzffNe4s1MZpE5Eg3FcEguuc5axlnKqQwsmEG7k3oFU-f9T1_vXxWMpBPPViV1oZTS46pyQO7d01pUinPlUc_953c05qbEa15CB2EdPATDH70TFwANvKb2QGaMSG_r-aXKva0cY4TvV-Uu7T5vy6WKVC42VyiNYLB22BTDqtU-Sp2aWLkVISCtQW"/>
+            <div class="absolute top-4 left-4">
+              <span class="px-3 py-1 rounded-full bg-white/95 backdrop-blur-md text-navy-deep text-xs font-extrabold shadow-sm border border-slate-200">
+                Heavy Industrial Core
+              </span>
+            </div>
+            <div class="absolute bottom-4 left-4 right-4 z-10">
+              <h3 class="text-2xl font-black text-white drop-shadow-md">Heavy Duty Paper Core Industri</h3>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-navy-deep/85 via-transparent to-transparent pointer-events-none"></div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Dibuat dengan multi-layer kraft paper berkepadatan tinggi untuk menahan tegangan gulung ekstrim mesin winding dan rotogravure.
+            </p>
+            <div class="grid grid-cols-3 gap-2 text-xs border-t border-slate-100 pt-4 bg-slate-50/80 p-3 rounded-xl">
+              <div>
+                <span class="text-slate-400 font-bold block uppercase text-[10px]">Diameter Dalam</span>
+                <span class="text-navy-deep font-bold">1" s/d 12" (76mm std)</span>
+              </div>
+              <div>
+                <span class="text-slate-400 font-bold block uppercase text-[10px]">Ketebalan Maks</span>
+                <span class="text-navy-deep font-bold">Hingga 15 mm</span>
+              </div>
+              <div>
+                <span class="text-slate-400 font-bold block uppercase text-[10px]">Ketahanan Beban</span>
+                <span class="text-navy-deep font-bold">Radial Crush High</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ALUR PEMESANAN (Workflow Grid) -->
+  <section class="py-20 bg-slate-100 border-y border-slate-200 relative overflow-hidden blueprint-grid" id="alur-pemesanan">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-16 space-y-3 reveal-on-scroll">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-slate-300 text-navy-deep text-xs font-bold shadow-sm">
+          <span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+          Alur Kerja Pabrik
+        </div>
+        <h2 class="text-3xl md:text-4xl font-black text-navy-deep tracking-tight">
+          Alur Pemesanan & Production Transparency
+        </h2>
+        <p class="text-slate-600 text-base">
+          Proses cepat dan terukur dari konsultasi spesifikasi hingga pengiriman kargo pabrik.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <!-- Step 1 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 relative flex flex-col justify-between group reveal-on-scroll">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <span class="text-4xl font-black text-slate-300 group-hover:text-amber-500 transition-colors duration-300">01</span>
+              <span class="text-[10px] font-extrabold uppercase tracking-wider bg-amber-100 text-amber-900 px-2.5 py-1 rounded-full">
+                Dimensi & Fungsi
+              </span>
+            </div>
+            <h3 class="text-lg font-bold text-navy-deep mb-2">Tentukan Spesifikasi</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Konsultasi diameter dalam (ID), ketebalan dinding karton (thickness), panjang potongan, dan kebutuhan tutup.
+            </p>
+          </div>
+          <div class="mt-6 pt-3 border-t border-slate-100 text-[11px] font-semibold text-primary flex items-center gap-1">
+            <span class="material-symbols-outlined text-sm">straighten</span> Akurasi Presisi ±0.5 mm
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 relative flex flex-col justify-between group reveal-on-scroll">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <span class="text-4xl font-black text-slate-300 group-hover:text-secondary-container transition-colors duration-300">02</span>
+              <span class="text-[10px] font-extrabold uppercase tracking-wider bg-orange-100 text-orange-900 px-2.5 py-1 rounded-full">
+                Kalkulator / Chat
+              </span>
+            </div>
+            <h3 class="text-lg font-bold text-navy-deep mb-2">Kirim via Form / WA</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Masukkan rincian dimensi ke kalkulator RFQ untuk menyusun draft pesanan otomatis ke WhatsApp sales engineer.
+            </p>
+          </div>
+          <div class="mt-6 pt-3 border-t border-slate-100 text-[11px] font-semibold text-secondary-container flex items-center gap-1">
+            <span class="material-symbols-outlined text-sm">bolt</span> Respon Cepat &lt; 30 Menit
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 relative flex flex-col justify-between group reveal-on-scroll">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <span class="text-4xl font-black text-slate-300 group-hover:text-blue-600 transition-colors duration-300">03</span>
+              <span class="text-[10px] font-extrabold uppercase tracking-wider bg-blue-100 text-blue-900 px-2.5 py-1 rounded-full">
+                Surat Penawaran
+              </span>
+            </div>
+            <h3 class="text-lg font-bold text-navy-deep mb-2">Penawaran & Invoice</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Admin sales menerbitkan surat penawaran resmi (RFQ), estimasi lead time, mock-up approval sampel, serta invoice.
+            </p>
+          </div>
+          <div class="mt-6 pt-3 border-t border-slate-100 text-[11px] font-semibold text-blue-700 flex items-center gap-1">
+            <span class="material-symbols-outlined text-sm">verified</span> Legalitas & Faktur Pajak
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 relative flex flex-col justify-between group reveal-on-scroll">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <span class="text-4xl font-black text-slate-300 group-hover:text-emerald-600 transition-colors duration-300">04</span>
+              <span class="text-[10px] font-extrabold uppercase tracking-wider bg-emerald-100 text-emerald-900 px-2.5 py-1 rounded-full">
+                Winding & Dispatch
+              </span>
+            </div>
+            <h3 class="text-lg font-bold text-navy-deep mb-2">Produksi & Ekspedisi</h3>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Mesin lilit spiral memproses pesanan, QC ketat bebas serabut, pengepakan strapping aman, dan pengiriman armada.
+            </p>
+          </div>
+          <div class="mt-6 pt-3 border-t border-slate-100 text-[11px] font-semibold text-emerald-700 flex items-center gap-1">
+            <span class="material-symbols-outlined text-sm">local_shipping</span> Kargo Darat & Laut
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE RFQ CALCULATOR & LIVE 3D/SVG CANVAS VISUALIZER -->
+  <section class="py-20 bg-white border-b border-slate-200" id="kalkulator-rfq">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        
+        <!-- Left Column: Context & Interactive 3D/SVG Visualizer Box -->
+        <div class="lg:col-span-5 space-y-6 reveal-on-scroll">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-primary text-xs font-bold border border-amber-200 mb-3">
+              <span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+              Simulasi & Visualizer Cepat
+            </div>
+            <h2 class="text-3xl md:text-4xl font-black text-navy-deep tracking-tight leading-tight">
+              Kalkulator Spesifikasi & Visualizer RFQ
+            </h2>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed mt-2">
+              Rancang dimensi tabung kertas karton sesuai kebutuhan Anda. Perubahan spesifikasi akan langsung memperbarui bentuk simulasi visual 3D di bawah ini.
+            </p>
+          </div>
+
+          <!-- DYNAMIC CYLINDER VISUALIZER CANVAS -->
+          <div class="bg-gradient-to-br from-slate-900 to-navy-deep p-6 rounded-3xl border border-slate-800 shadow-xl relative overflow-hidden flex flex-col items-center justify-center">
+            <div class="absolute top-4 left-4 flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+              <span class="text-[10px] uppercase font-mono font-bold text-slate-300">3D Interactive Preview</span>
+            </div>
+
+            <!-- Interactive SVG Cylinder Graphic -->
+            <div class="w-full h-64 flex items-center justify-center relative my-2">
+              <svg id="cylinderSvg" class="w-full h-full max-w-xs transition-all duration-500 transform" viewBox="0 0 300 240">
+                <defs>
+                  <!-- Kraft Finish Gradient -->
+                  <linearGradient id="kraftGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#8d6e63" />
+                    <stop offset="50%" stop-color="#d7ccc8" />
+                    <stop offset="100%" stop-color="#5d4037" />
+                  </linearGradient>
+                  
+                  <!-- White Coated Finish Gradient -->
+                  <linearGradient id="whiteGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#cbd5e1" />
+                    <stop offset="50%" stop-color="#ffffff" />
+                    <stop offset="100%" stop-color="#94a3b8" />
+                  </linearGradient>
+
+                  <!-- Metallic Cap Gradient -->
+                  <linearGradient id="metalGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#94a3b8" />
+                    <stop offset="50%" stop-color="#f8fafc" />
+                    <stop offset="100%" stop-color="#475569" />
+                  </linearGradient>
+                  
+                  <!-- Foil Inner Gradient -->
+                  <linearGradient id="foilGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#e2e8f0" />
+                    <stop offset="100%" stop-color="#64748b" />
+                  </linearGradient>
+                </defs>
+
+                <!-- Outer Tube Cylinder -->
+                <g id="cylinderGroup" class="transition-all duration-500 origin-center">
+                  <!-- Main Body -->
+                  <rect id="tubeBody" x="80" y="50" width="140" height="130" fill="url(#kraftGrad)" rx="2" class="transition-all duration-500"/>
+                  
+                  <!-- Spiral Pattern Lines -->
+                  <path id="spiralLines" d="M80 70 L220 90 M80 110 L220 130 M80 150 L220 170" stroke="rgba(0,0,0,0.15)" stroke-width="3" stroke-dasharray="4,2"/>
+
+                  <!-- Bottom Cap / Edge -->
+                  <ellipse id="tubeBottom" cx="150" cy="180" rx="70" ry="18" fill="#5d4037" class="transition-all duration-500"/>
+                  
+                  <!-- Top Cap / Rim -->
+                  <ellipse id="tubeTopOuter" cx="150" cy="50" rx="70" ry="18" fill="url(#kraftGrad)" stroke="#4e342e" stroke-width="2" class="transition-all duration-500"/>
+                  <ellipse id="tubeTopInner" cx="150" cy="50" rx="55" ry="13" fill="#3e2723" class="transition-all duration-500"/>
+                  
+                  <!-- Inner Wall Layer representing Thickness -->
+                  <ellipse id="tubeTopHole" cx="150" cy="50" rx="48" ry="11" fill="#1a2530" class="transition-all duration-500"/>
+
+                  <!-- Cap Overlay Graphic (Tutup Seng / Plastic) -->
+                  <g id="endCapOverlay" class="opacity-0 transition-opacity duration-300">
+                    <ellipse cx="150" cy="48" rx="72" ry="19" fill="url(#metalGrad)" stroke="#334155" stroke-width="2"/>
+                    <ellipse cx="150" cy="48" rx="60" ry="14" fill="none" stroke="#94a3b8" stroke-width="1.5"/>
+                  </g>
+                </g>
+              </svg>
+            </div>
+
+            <!-- Live Specs Tag -->
+            <div class="flex items-center justify-between w-full pt-2 border-t border-slate-800 text-[11px] font-mono text-slate-400">
+              <span id="vizSpecs">Diameter: 76mm | Thickness: 3mm</span>
+              <span class="text-amber-400 font-bold" id="vizMaterial">Kraft Paper</span>
+            </div>
+          </div>
+
+          <!-- Technical Specs Highlights -->
+          <div class="space-y-3 pt-2">
+            <div class="flex items-start gap-3 p-3.5 rounded-2xl bg-[#fcf9f4] border border-slate-200">
+              <span class="material-symbols-outlined text-amber-700 mt-0.5">straighten</span>
+              <div>
+                <h4 class="text-xs font-bold text-navy-deep uppercase tracking-wider">Inner Diameter (ID) Custom</h4>
+                <p class="text-xs text-slate-600">Mulai dari 25 mm hingga 300 mm dengan cetakan mandrel presisi.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 p-3.5 rounded-2xl bg-[#fcf9f4] border border-slate-200">
+              <span class="material-symbols-outlined text-amber-700 mt-0.5">shield</span>
+              <div>
+                <h4 class="text-xs font-bold text-navy-deep uppercase tracking-wider">Ketebalan Dinding Kertas</h4>
+                <p class="text-xs text-slate-600">Rentang 1.5 mm hingga 15 mm sesuai toleransi beban kompresi aksial.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive Estimator Form -->
+        <div class="lg:col-span-7 bg-[#fcf9f4] p-6 sm:p-8 rounded-3xl border border-slate-300 shadow-xl reveal-on-scroll">
+          <form class="space-y-5" id="rfqForm" onsubmit="event.preventDefault(); submitToWhatsApp();">
+            
+            <!-- Row 1: Tipe Tabung & Tipe Tutup -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-extrabold text-navy-deep uppercase tracking-wider mb-1.5" for="tabungType">
+                  1. Tipe Produk Tabung
+                </label>
+                <select class="w-full text-sm font-semibold rounded-xl border-slate-300 bg-white focus:border-secondary-container focus:ring-secondary-container p-3 transition-shadow shadow-sm" id="tabungType" onchange="updatePreview()">
+                  <option value="Celengan Tabung Karton">Celengan Tabung Karton</option>
+                  <option value="Wadah Kok Badminton">Wadah Kok Badminton (Shuttlecock)</option>
+                  <option value="Mailing & Protective Tube">Mailing & Protective Tube</option>
+                  <option value="Industrial Heavy Duty Paper Core" selected>Industrial Heavy Duty Paper Core</option>
+                  <option value="Custom Selongsong Kertas Khusus">Custom Selongsong Kertas Khusus</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-extrabold text-navy-deep uppercase tracking-wider mb-1.5" for="tutupType">
+                  2. Jenis Penutup (End Cap)
+                </label>
+                <select class="w-full text-sm font-semibold rounded-xl border-slate-300 bg-white focus:border-secondary-container focus:ring-secondary-container p-3 transition-shadow shadow-sm" id="tutupType" onchange="updatePreview()">
+                  <option value="Tanpa Tutup (Open Ended Tube)" selected>Tanpa Tutup (Open Ended Core)</option>
+                  <option value="Tutup Seng Kaleng (Buka-Tutup)">Tutup Seng Kaleng (Buka-Tutup)</option>
+                  <option value="Tutup Seng Kaleng Paten (Sealed)">Tutup Seng Kaleng Paten (Sealed)</option>
+                  <option value="Plastic Plug / End Cap">Plastic Plug / End Cap</option>
+                  <option value="Curly Edge (Lipat Ujung)">Curly Edge (Lipat Ujung)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Row 2: Dimensi ID & Quick Presets -->
+            <div>
+              <div class="flex items-center justify-between mb-1.5">
+                <label class="block text-xs font-extrabold text-navy-deep uppercase tracking-wider" for="innerDiameter">
+                  3. Diameter Dalam (Inner Diameter / ID)
+                </label>
+                <span class="text-[11px] text-slate-500 font-medium">Contoh: 76 mm / 3 inch</span>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-12 gap-3 items-center">
+                <div class="sm:col-span-6">
+                  <input class="w-full text-sm font-semibold rounded-xl border-slate-300 bg-white focus:border-secondary-container focus:ring-secondary-container p-3 shadow-sm" id="innerDiameter" oninput="updatePreview()" type="text" value="76 mm (Standard 3 inch)"/>
+                </div>
+                <div class="sm:col-span-6 flex flex-wrap gap-1.5">
+                  <button type="button" class="text-xs px-2.5 py-1.5 bg-white border border-slate-300 rounded-lg font-bold hover:border-secondary-container hover:bg-orange-50 transition-colors shadow-sm" onclick="setID('50 mm')">50 mm</button>
+                  <button type="button" class="text-xs px-2.5 py-1.5 bg-white border border-slate-300 rounded-lg font-bold hover:border-secondary-container hover:bg-orange-50 transition-colors shadow-sm" onclick="setID('67 mm (Kok)')">67 mm</button>
+                  <button type="button" class="text-xs px-2.5 py-1.5 bg-white border border-slate-300 rounded-lg font-bold hover:border-secondary-container hover:bg-orange-50 transition-colors shadow-sm" onclick="setID('76 mm (3 inch)')">76 mm</button>
+                  <button type="button" class="text-xs px-2.5 py-1.5 bg-white border border-slate-300 rounded-lg font-bold hover:border-secondary-container hover:bg-orange-50 transition-colors shadow-sm" onclick="setID('100 mm (4 inch)')">100 mm</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Row 3: Ketebalan & Panjang -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-extrabold text-navy-deep uppercase tracking-wider mb-1.5" for="thickness">
+                  4. Ketebalan Dinding (Thickness)
+                </label>
+                <select class="w-full text-sm font-semibold rounded-xl border-slate-300 bg-white focus:border-secondary-container focus:ring-secondary-container p-3 shadow-sm" id="thickness" onchange="updatePreview()">
+                  <option value="1.5 mm (Standard Light)">1.5 mm (Standard Light)</option>
+                  <option value="2.0 mm (Medium Celengan)">2.0 mm (Medium Celengan)</option>
+                  <option value="3.0 mm (Protective Mailing)" selected>3.0 mm (Protective Core)</option>
+                  <option value="5.0 mm (Heavy Duty)">5.0 mm (Heavy Duty)</option>
+                  <option value="8.0 mm - 15 mm (Super Rigid Core)">8.0 mm - 15 mm (Super Rigid)</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-extrabold text-navy-deep uppercase tracking-wider mb-1.5" for="panjang">
+                  5. Panjang / Tinggi Tabung (cm)
+                </label>
+                <input class="w-full text-sm font-semibold rounded-xl border-slate-300 bg-white focus:border-secondary-container focus:ring-secondary-container p-3 shadow-sm" id="panjang" oninput="updatePreview()" type="text" value="30 cm"/>
+              </div>
+            </div>
+
+            <!-- Row 4: Jumlah Order & Finishing -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-extrabold text-navy-deep uppercase tracking-wider mb-1.5" for="qty">
+                  6. Jumlah Pesanan (Qty / Pcs)
+                </label>
+                <input class="w-full text-sm font-semibold rounded-xl border-slate-300 bg-white focus:border-secondary-container focus:ring-secondary-container p-3 shadow-sm" id="qty" oninput="updatePreview()" type="text" value="1.000 Pcs"/>
+              </div>
+
+              <div>
+                <label class="block text-xs font-extrabold text-navy-deep uppercase tracking-wider mb-1.5" for="finishing">
+                  7. Opsi Finishing Tabung
+                </label>
+                <select class="w-full text-sm font-semibold rounded-xl border-slate-300 bg-white focus:border-secondary-container focus:ring-secondary-container p-3 shadow-sm" id="finishing" onchange="updatePreview()">
+                  <option value="Polos Kraft Coklat Alami (Eco-friendly)" selected>Polos Kraft Coklat Alami</option>
+                  <option value="Kertas Putih Luar (White Coated)">Kertas Putih Luar (White Coated)</option>
+                  <option value="Cetak Custom Sticker Label Full Colour">Cetak Custom Sticker Label</option>
+                  <option value="Lapisan Dalam Kedap Udara / Alumunium Foil">Lapisan Dalam Kedap / Foil</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Row 5: Catatan / Nama Perusahaan -->
+            <div>
+              <label class="block text-xs font-extrabold text-navy-deep uppercase tracking-wider mb-1.5" for="companyName">
+                8. Nama PIC & Perusahaan / Lokasi Kirim
+              </label>
+              <input class="w-full text-sm font-semibold rounded-xl border-slate-300 bg-white focus:border-secondary-container focus:ring-secondary-container p-3 shadow-sm" id="companyName" oninput="updatePreview()" type="text" value="PT Mitra Sejati / Surabaya"/>
+            </div>
+
+            <!-- Live Output Preview WhatsApp Box -->
+            <div class="p-4 rounded-2xl bg-slate-900 text-slate-200 border border-slate-800 text-xs font-mono space-y-2 shadow-inner">
+              <div class="flex items-center justify-between text-amber-400 font-bold pb-2 border-b border-slate-800">
+                <span class="flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-sm">terminal</span> Draft Pesan WhatsApp Otomatis:
+                </span>
+                <button type="button" onclick="copyWhatsAppDraft()" class="text-[10px] bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white px-2.5 py-1 rounded-md transition-colors flex items-center gap-1">
+                  <span class="material-symbols-outlined text-[12px]">content_copy</span> Copy Text
+                </button>
+              </div>
+              <div class="whitespace-pre-line leading-relaxed text-slate-300 max-h-36 overflow-y-auto pr-1" id="previewText">
+                Memuat rincian pesanan...
+              </div>
+            </div>
+
+            <!-- CTA Submit Button -->
+            <button class="w-full py-4 px-6 rounded-2xl bg-secondary-container hover:bg-orange-600 text-white font-black text-sm sm:text-base shadow-xl hover:shadow-2xl hover:shadow-orange-500/30 flex items-center justify-center gap-3 transition-all duration-300 active:scale-[0.99] group" type="submit">
+              <span class="material-symbols-outlined text-xl">chat</span>
+              <span>Kirim Spesifikasi Langsung ke WhatsApp Admin Pabrik</span>
+              <span class="material-symbols-outlined text-base transition-transform duration-300 group-hover:translate-x-1">north_east</span>
+            </button>
+            <p class="text-center text-[11px] text-slate-500">
+              *Penawaran harga formal dalam format PDF resmi (RFQ) akan diterbitkan oleh sales engineer kami.
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BENTO "MENGAPA MEMILIH KAMI" (Standar Mutu) -->
+  <section class="py-20 bg-slate-100 border-b border-slate-200" id="keunggulan">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-14 space-y-3 reveal-on-scroll">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-slate-300 text-navy-deep text-xs font-bold shadow-sm">
+          <span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+          Standar Manufaktur
+        </div>
+        <h2 class="text-3xl md:text-4xl font-black text-navy-deep tracking-tight">
+          Mengapa Pabrik Kami Menjadi Pilihan Utama?
+        </h2>
+        <p class="text-slate-600 text-base">
+          Didukung teknologi mesin spiral winder otomatis, pemilihan bahan kraft bersertifikat, dan kontrol kualitas tanpa kompromi.
+        </p>
+      </div>
+
+      <!-- Bento Grid Architecture with Tilt & Hover Spotlight -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+        
+        <!-- Bento 1: Kapasitas 50.000+ (Navy Box) -->
+        <div class="tilt-card md:col-span-7 bg-navy-deep rounded-3xl p-8 text-white relative overflow-hidden flex flex-col justify-between min-h-[300px] border border-navy-structure shadow-xl group reveal-on-scroll">
+          <div class="relative z-10">
+            <span class="text-xs font-bold text-amber-400 uppercase tracking-wider block mb-2">Kapasitas Produksi Harian</span>
+            <div class="text-4xl md:text-5xl font-black text-white leading-none tracking-tight">50.000+ Tube</div>
+          </div>
+          <div class="relative z-10 max-w-md mt-6">
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Didukung 4 lini mesin spiral automatic winding winder berkecepatan tinggi untuk memenuhi tender B2B dan suplai rutin pabrik tanpa hambatan antrean.
+            </p>
+          </div>
+          <div class="absolute right-4 bottom-4 w-44 opacity-15 pointer-events-none text-white group-hover:scale-110 transition-transform duration-500">
+            <span class="material-symbols-outlined text-[140px]">precision_manufacturing</span>
+          </div>
+        </div>
+
+        <!-- Bento 2: Direct Factory Pricing (Orange Accent Panel) -->
+        <div class="tilt-card md:col-span-5 bg-secondary-container text-white p-8 rounded-3xl shadow-xl flex flex-col justify-between min-h-[300px] hover:shadow-2xl hover:shadow-orange-500/20 transition-all duration-300 reveal-on-scroll">
+          <div>
+            <span class="text-xs font-bold text-white/80 uppercase tracking-wider block mb-2">Biaya Efisien & Kompetitif</span>
+            <div class="text-3xl md:text-4xl font-black text-white tracking-tight">Direct Factory Price</div>
+          </div>
+          <div>
+            <p class="text-white/95 text-sm leading-relaxed mb-4">
+              Harga langsung tangan pertama tanpa perantara broker. Skema harga berjenjang (tiered pricing) menguntungkan untuk repeat order rutin industri.
+            </p>
+            <div class="flex items-center gap-2 text-xs font-bold bg-white/20 backdrop-blur-md px-3.5 py-2 rounded-xl w-max">
+              <span class="material-symbols-outlined text-sm">savings</span>
+              <span>Efisiensi Biaya Kemasan Hingga 25%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bento 3: 100% Recyclable Eco Kraft -->
+        <div class="tilt-card md:col-span-4 bg-white p-7 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between min-h-[250px] reveal-on-scroll">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center mb-4 font-bold shadow-inner">
+              <span class="material-symbols-outlined text-2xl">compost</span>
+            </div>
+            <div class="text-lg font-bold text-navy-deep mb-1">100% Recyclable Kraft Paper</div>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+              Menggunakan serat pulp daur ulang bermutu tinggi yang ramah lingkungan dan lolos standar audit keberlanjutan ekspor.
+            </p>
+          </div>
+          <span class="text-[11px] font-extrabold text-emerald-700 uppercase tracking-wider block mt-4">
+            Eco-Friendly Packaging Standard
+          </span>
+        </div>
+
+        <!-- Bento 4: Quality Control & Precision -->
+        <div class="tilt-card md:col-span-4 bg-white p-7 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between min-h-[250px] reveal-on-scroll">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center mb-4 font-bold shadow-inner">
+              <span class="material-symbols-outlined text-2xl">verified</span>
+            </div>
+            <div class="text-lg font-bold text-navy-deep mb-1">Toleransi Dimensi ±0.5 mm</div>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+              Memastikan paper core pas sempurna pada poros mandrel mesin rol industri dan tutup seng presisi tanpa risiko longgar.
+            </p>
+          </div>
+          <span class="text-[11px] font-extrabold text-amber-800 uppercase tracking-wider block mt-4">
+            Uji Radial Crush Strength
+          </span>
+        </div>
+
+        <!-- Bento 5: Logistik Seluruh Nusantara -->
+        <div class="tilt-card md:col-span-4 bg-white p-7 rounded-3xl border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between min-h-[250px] reveal-on-scroll">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-blue-100 text-blue-800 flex items-center justify-center mb-4 font-bold shadow-inner">
+              <span class="material-symbols-outlined text-2xl">local_shipping</span>
+            </div>
+            <div class="text-lg font-bold text-navy-deep mb-1">Ekspedisi Terintegrasi</div>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+              Didukung armada pengiriman pabrik mandiri serta kemitraan ekspedisi kargo truk fuso, kontainer, dan kapal kargo antarpulau.
+            </p>
+          </div>
+          <span class="text-[11px] font-extrabold text-blue-800 uppercase tracking-wider block mt-4">
+            Pengiriman Aman Se-Indonesia
+          </span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS & FAQ ACCORDION -->
+  <section class="py-20 bg-[#fcf9f4]" id="faq">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      
+      <!-- Testimonials Section -->
+      <div class="mb-20">
+        <div class="text-center max-w-2xl mx-auto mb-12 space-y-3 reveal-on-scroll">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-primary text-xs font-bold border border-amber-200">
+            <span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+            Testimoni & Kemitraan
+          </div>
+          <h2 class="text-3xl md:text-4xl font-black text-navy-deep tracking-tight">
+            Apa Kata Mitra Industri Kami?
+          </h2>
+          <p class="text-slate-600 text-base">
+            Kepuasan pelanggan dibangun di atas konsistensi dimensi tabung dan keandalan pengiriman tepat waktu.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Testimonial 1 -->
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between reveal-on-scroll">
+            <div>
+              <div class="flex text-amber-500 mb-3">
+                <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+              <span class="text-[11px] font-bold text-primary block uppercase tracking-wider mb-2">Pabrik Adhesive & Lakban</span>
+              <p class="text-slate-700 text-xs sm:text-sm italic leading-relaxed">
+                "Ketahanan kompresi radial paper core dari CV Sejahtera Kemasan sangat stabil saat masuk mesin slitting roll kami. Tidak pernah ada kendala pecah saat rewinding."
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-100 mt-4">
+              <div class="w-9 h-9 rounded-full bg-slate-200 font-bold text-navy-deep text-xs flex items-center justify-center shadow-inner">BW</div>
+              <div>
+                <span class="text-xs font-bold text-navy-deep block">Bambang Wijaya</span>
+                <span class="text-[10px] text-slate-500 block">Plant Operations Head, Sidoarjo</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between reveal-on-scroll">
+            <div>
+              <div class="flex text-amber-500 mb-3">
+                <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+              <span class="text-[11px] font-bold text-primary block uppercase tracking-wider mb-2">Brand Shuttlecock Nasional</span>
+              <p class="text-slate-700 text-xs sm:text-sm italic leading-relaxed">
+                "Tabung selongsong kok badminton dengan tutup kalengnya sangat presisi. Kelembaban kok tetap terjaga sempurna sampai ke tangan pembeli di berbagai pulau."
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-100 mt-4">
+              <div class="w-9 h-9 rounded-full bg-slate-200 font-bold text-navy-deep text-xs flex items-center justify-center shadow-inner">RH</div>
+              <div>
+                <span class="text-xs font-bold text-navy-deep block">Rian Hidayat</span>
+                <span class="text-[10px] text-slate-500 block">Owner Shuttlecock Sport, Tegal</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between reveal-on-scroll">
+            <div>
+              <div class="flex text-amber-500 mb-3">
+                <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+              <span class="text-[11px] font-bold text-primary block uppercase tracking-wider mb-2">Studio Arsitektur & Desain</span>
+              <p class="text-slate-700 text-xs sm:text-sm italic leading-relaxed">
+                "Mailing tube tebal 3 mm sangat kokoh. Dokumen master blueprint dan hasil rendering sayembara kami aman dari resiko tertekuk oleh kurir logistik."
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-100 mt-4">
+              <div class="w-9 h-9 rounded-full bg-slate-200 font-bold text-navy-deep text-xs flex items-center justify-center shadow-inner">AS</div>
+              <div>
+                <span class="text-xs font-bold text-navy-deep block">Anindita Surya</span>
+                <span class="text-[10px] text-slate-500 block">Principal Architect, Jakarta</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between reveal-on-scroll">
+            <div>
+              <div class="flex text-amber-500 mb-3">
+                <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+              <span class="text-[11px] font-bold text-primary block uppercase tracking-wider mb-2">Agency Merchandise & CSR</span>
+              <p class="text-slate-700 text-xs sm:text-sm italic leading-relaxed">
+                "Pesan 20.000 celengan tabung custom berlabel untuk program edukasi bank BUMN. Selesai tepat sebelum deadline acara dan kualitas rekatnya sangat rapi."
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-slate-100 mt-4">
+              <div class="w-9 h-9 rounded-full bg-slate-200 font-bold text-navy-deep text-xs flex items-center justify-center shadow-inner">MK</div>
+              <div>
+                <span class="text-xs font-bold text-navy-deep block">Maya Kusuma</span>
+                <span class="text-[10px] text-slate-500 block">Procurement Lead, Surabaya</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Accordion with Smooth Expand/Collapse -->
+      <div class="max-w-4xl mx-auto reveal-on-scroll">
+        <div class="text-center mb-8">
+          <h3 class="text-2xl font-black text-navy-deep">Pertanyaan Teknis yang Sering Diajukan (FAQ)</h3>
+          <p class="text-slate-600 text-sm mt-1">Informasi penting mengenai MOQ, waktu pembuatan sampel, dan toleransi mesin.</p>
+        </div>
+
+        <div class="space-y-4" id="faqAccordion">
+          <!-- FAQ Item 1 -->
+          <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm transition-all duration-300">
+            <button type="button" class="faq-btn w-full flex justify-between items-center p-5 font-bold text-navy-deep text-left text-sm sm:text-base hover:bg-slate-50 transition-colors">
+              <span>Berapa Minimum Order Quantity (MOQ) untuk tabung custom vs ready stock?</span>
+              <span class="material-symbols-outlined text-slate-400 transition-transform duration-300 icon-arrow">expand_more</span>
+            </button>
+            <div class="faq-content hidden px-5 pb-5 pt-0 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 mt-1">
+              <p class="pt-3">
+                Untuk produk ready-stock (seperti paper core 3 inch dan celengan kraft ukuran standar), kami melayani order minimum mulai dari 100 – 300 pcs. Sedangkan untuk ukuran custom diameter khusus yang memerlukan setting pisau dan mandrel baru, MOQ dimulai dari 1.000 hingga 2.500 pcs tergantung dimensi.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm transition-all duration-300">
+            <button type="button" class="faq-btn w-full flex justify-between items-center p-5 font-bold text-navy-deep text-left text-sm sm:text-base hover:bg-slate-50 transition-colors">
+              <span>Berapa lama lead time produksi di pabrik CV Sejahtera Kemasan?</span>
+              <span class="material-symbols-outlined text-slate-400 transition-transform duration-300 icon-arrow">expand_more</span>
+            </button>
+            <div class="faq-content hidden px-5 pb-5 pt-0 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 mt-1">
+              <p class="pt-3">
+                Kapasitas produksi harian kami mencapai 50.000+ tube. Untuk pesanan repeat order polos, estimasi siap kirim berkisar antara 3 - 5 hari kerja. Untuk tabung custom dengan stiker label cetak laminasi, waktu produksi berkisar antara 5 - 8 hari kerja setelah approval sampel fisik/mockup.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm transition-all duration-300">
+            <button type="button" class="faq-btn w-full flex justify-between items-center p-5 font-bold text-navy-deep text-left text-sm sm:text-base hover:bg-slate-50 transition-colors">
+              <span>Apakah bisa mengirimkan sampel fisik sebelum produksi massal?</span>
+              <span class="material-symbols-outlined text-slate-400 transition-transform duration-300 icon-arrow">expand_more</span>
+            </button>
+            <div class="faq-content hidden px-5 pb-5 pt-0 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 mt-1">
+              <p class="pt-3">
+                Ya, kami menyediakan layanan pembuatan prototipe sample uji coba (test fitting) ke mesin Anda untuk memastikan diameter dalam (ID), ketebalan (thickness), dan panjang sesuai kebutuhan sebelum PO massal diproses.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm transition-all duration-300">
+            <button type="button" class="faq-btn w-full flex justify-between items-center p-5 font-bold text-navy-deep text-left text-sm sm:text-base hover:bg-slate-50 transition-colors">
+              <span>Bagaimana dengan pengiriman kargo ke luar Pulau Jawa?</span>
+              <span class="material-symbols-outlined text-slate-400 transition-transform duration-300 icon-arrow">expand_more</span>
+            </button>
+            <div class="faq-content hidden px-5 pb-5 pt-0 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 mt-1">
+              <p class="pt-3">
+                Kami secara rutin mendistribusikan tabung ke Sumatra, Kalimantan, Sulawesi, Bali, dan Papua menggunakan ekspedisi kargo laut (FCL/LCL) maupun truk darat. Kemasan dibundel dengan strapping kencang dan bungkus plastik anti-lembab demi keamanan maksimal selama transit.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PRE-FOOTER CALLOUT BANNER -->
+  <section class="py-16 bg-[#fcf9f4]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="relative rounded-3xl overflow-hidden bg-navy-deep p-8 md:p-14 border border-navy-structure flex flex-col justify-between shadow-2xl reveal-on-scroll">
+        <div class="relative z-10 max-w-2xl space-y-4">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-semibold">
+            <span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+            Kemitraan Jangka Panjang B2B
+          </div>
+          <h2 class="text-2xl sm:text-3xl md:text-5xl font-black text-white tracking-tight leading-tight">
+            Siap Meningkatkan Kualitas Kemasan Tabung & Pasokan Industri Anda?
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            Dapatkan penawaran harga pabrik resmi tangan pertama, konsultasi ukuran mandrel spesifik, dan sampel gratis untuk kebutuhan korporat Anda.
+          </p>
+        </div>
+
+        <div class="relative z-10 pt-10 flex flex-col sm:flex-row sm:items-center justify-between gap-6 border-t border-white/15 mt-8">
+          <a class="group inline-flex items-center gap-3 pl-6 pr-2.5 py-3 rounded-full bg-secondary-container hover:bg-orange-600 text-white font-bold shadow-lg hover:shadow-orange-500/20 transition-all duration-300 active:scale-95 self-start" href="https://wa.me/6281234567890?text=Halo%20CV%20Sejahtera%20Kemasan,%20saya%20ingin%20berkonsultasi%20mengenai%20kebutuhan%20paper%20tube/core%20industri" target="_blank">
+            <span>Hubungi Sales B2B Pabrik</span>
+            <span class="w-8 h-8 rounded-full bg-white/20 text-white flex items-center justify-center transition-transform duration-300 group-hover:rotate-45">
+              <span class="material-symbols-outlined text-[17px]">north_east</span>
+            </span>
+          </a>
+          <div class="flex items-center space-x-6 text-xs font-semibold text-slate-300 flex-wrap gap-y-2">
+            <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-amber-400 text-sm">schedule</span> Lead Time Cepat</span>
+            <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-emerald-400 text-sm">verified</span> Kualitas Teruji</span>
+            <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-blue-400 text-sm">local_shipping</span> Kirim Se-Indonesia</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy-deep text-white border-t border-navy-structure" id="kontak">
+    <div class="w-full max-w-7xl mx-auto px-6 pt-16 pb-8 flex flex-col justify-between">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-14 border-b border-slate-700/60">
+        
+        <!-- Column 1: Profil Pabrik -->
+        <div class="lg:col-span-4 space-y-4">
+          <div class="flex items-center gap-2.5">
+            <div class="w-9 h-9 rounded-xl bg-secondary-container flex items-center justify-center text-white font-bold shadow">
+              <span class="material-symbols-outlined text-xl">cyclone</span>
+            </div>
+            <span class="font-black text-lg text-white font-headline-sm tracking-tight">CV SEJAHTERA KEMASAN</span>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            Pabrik manufaktur selongsong karton spiral (paper core & paper tube) terdepan untuk aneka industri, peralatan olahraga shuttlecock, kemasan dokumen, dan celengan kaleng komersial.
+          </p>
+          <div class="pt-1">
+            <span class="inline-block text-[11px] font-semibold text-amber-400 bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/20">
+              NIB / Legalitas Industri Terdaftar Resmi
+            </span>
+          </div>
+        </div>
+
+        <!-- Column 2: Navigasi Lini Produk -->
+        <div class="lg:col-span-2 space-y-3">
+          <h4 class="text-xs font-bold text-amber-400 uppercase tracking-wider">Lini Produk</h4>
+          <ul class="space-y-2 text-xs sm:text-sm text-slate-300">
+            <li><a class="hover:text-amber-400 transition-colors" href="#lini-produk">Celengan Tabung Karton</a></li>
+            <li><a class="hover:text-amber-400 transition-colors" href="#lini-produk">Selongsong Kok Badminton</a></li>
+            <li><a class="hover:text-amber-400 transition-colors" href="#lini-produk">Mailing Tube Pelindung</a></li>
+            <li><a class="hover:text-amber-400 transition-colors" href="#lini-produk">Industrial Core Lakban</a></li>
+            <li><a class="hover:text-amber-400 transition-colors" href="#kalkulator-rfq">Custom Mandrel Tube</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Alamat & Kontak Dispatch -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="text-xs font-bold text-amber-400 uppercase tracking-wider">Lokasi & Kontak Dispatch</h4>
+          <div class="space-y-2.5 text-xs sm:text-sm text-slate-300">
+            <p class="flex items-start gap-2">
+              <span class="material-symbols-outlined text-sm text-secondary-container mt-0.5">location_on</span>
+              <span>Kawasan Industri & Pergudangan Sentra Mitra Blok C-12, Surabaya, Jawa Timur, Indonesia</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-sm text-secondary-container">call</span>
+              <a class="hover:text-amber-400 transition-colors" href="tel:+6281234567890">+62 812-3456-7890 (Sales Office)</a>
+            </p>
+            <p class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-sm text-secondary-container">mail</span>
+              <a class="hover:text-amber-400 transition-colors" href="mailto:order@sejahterakemasan.co.id">order@sejahterakemasan.co.id</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Column 4: Jam Kerja Operasional -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="text-xs font-bold text-amber-400 uppercase tracking-wider">Jam Kerja Operasional</h4>
+          <div class="space-y-1.5 text-xs sm:text-sm text-slate-300 bg-slate-800/60 p-4 rounded-xl border border-slate-700/60 shadow-inner">
+            <div class="flex justify-between items-center text-white font-medium">
+              <span>Senin – Jumat</span>
+              <span class="text-amber-400 font-bold">08:00 - 17:00 WIB</span>
+            </div>
+            <div class="flex justify-between items-center text-white font-medium">
+              <span>Sabtu (Dispatch)</span>
+              <span class="text-amber-400 font-bold">08:00 - 14:00 WIB</span>
+            </div>
+            <div class="flex justify-between items-center text-slate-400 text-xs pt-1 border-t border-slate-700/60">
+              <span>Minggu & Libur Nasional</span>
+              <span class="text-rose-400">Tutup (Emergency WA On)</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Legal Links -->
+      <div class="pt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs text-slate-400">
+        <p>© 2026 CV Sejahtera Kemasan. Hak Cipta Dilindungi Undang-Undang. Spesialis Paper Core & Kemasan Tabung Spiral.</p>
+        <div class="flex items-center space-x-6">
+          <a class="hover:text-amber-400 transition-colors" href="#hero">Beranda</a>
+          <a class="hover:text-amber-400 transition-colors" href="#kalkulator-rfq">Kalkulator RFQ</a>
+          <a class="hover:text-amber-400 transition-colors" href="#faq">Kebijakan Sampel & Garansi</a>
+        </div>
+      </div>
+
+      <!-- Massive Monumental Wordmark -->
+      <div class="pt-12 pb-2 overflow-hidden select-none">
+        <div class="text-[9.5vw] font-black text-slate-800/70 tracking-tighter w-full text-center leading-none uppercase pointer-events-none">
+          SEJAHTERA KEMASAN
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING BACK TO TOP BUTTON -->
+  <button id="backToTopBtn" aria-label="Back to Top" class="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-secondary-container text-white shadow-2xl flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 hover:scale-110 active:scale-95 focus:outline-none">
+    <span class="material-symbols-outlined text-2xl">arrow_upward</span>
+  </button>
+
+  <!-- JAVASCRIPT LOGIC: INTERACTION, ANIMATIONS, VISUALIZER & RFQ -->
+  <script>
+    // --- 1. PRESET & FORM UPDATER FOR RFQ & 3D VISUALIZER ---
+    function setID(val) {
+      document.getElementById('innerDiameter').value = val;
+      updatePreview();
+    }
+
+    function updatePreview() {
+      const tabung = document.getElementById('tabungType').value;
+      const tutup = document.getElementById('tutupType').value;
+      const id = document.getElementById('innerDiameter').value;
+      const thickness = document.getElementById('thickness').value;
+      const panjang = document.getElementById('panjang').value;
+      const qty = document.getElementById('qty').value;
+      const finishing = document.getElementById('finishing').value;
+      const company = document.getElementById('companyName').value;
+
+      // Generate WhatsApp text
+      const text = `Halo Tim Sales CV Sejahtera Kemasan, mohon penawaran harga resmi (RFQ) untuk spesifikasi berikut:
+
+• Tipe Tabung: ${tabung}
+• Jenis Penutup: ${tutup}
+• Diameter Dalam (ID): ${id}
+• Ketebalan Dinding: ${thickness}
+• Panjang Tabung: ${panjang}
+• Finishing: ${finishing}
+• Estimasi Jumlah Order: ${qty}
+• Pengirim / PIC: ${company}
+
+Mohon konfirmasi harga, lead time produksi, dan ketersediaan sampel fisik. Terima kasih.`;
+
+      document.getElementById('previewText').innerText = text;
+
+      // Update Live Interactive SVG Cylinder Graphic
+      updateCylinderVisualizer(tabung, tutup, id, thickness, finishing);
+    }
+
+    function updateCylinderVisualizer(tabung, tutup, idText, thicknessText, finishingText) {
+      const body = document.getElementById('tubeBody');
+      const topOuter = document.getElementById('tubeTopOuter');
+      const topInner = document.getElementById('tubeTopInner');
+      const topHole = document.getElementById('tubeTopHole');
+      const endCap = document.getElementById('endCapOverlay');
+      const vizSpecs = document.getElementById('vizSpecs');
+      const vizMat = document.getElementById('vizMaterial');
+
+      // 1. Color / Finish update
+      if (finishingText.includes('White')) {
+        body.setAttribute('fill', 'url(#whiteGrad)');
+        topOuter.setAttribute('fill', 'url(#whiteGrad)');
+        vizMat.innerText = 'White Coated';
+      } else if (finishingText.includes('Sticker')) {
+        body.setAttribute('fill', 'url(#kraftGrad)');
+        topOuter.setAttribute('fill', 'url(#kraftGrad)');
+        vizMat.innerText = 'Full Sticker Label';
+      } else if (finishingText.includes('Foil')) {
+        body.setAttribute('fill', 'url(#kraftGrad)');
+        topOuter.setAttribute('fill', 'url(#kraftGrad)');
+        topHole.setAttribute('fill', 'url(#foilGrad)');
+        vizMat.innerText = 'Aluminum Foil Inner';
+      } else {
+        body.setAttribute('fill', 'url(#kraftGrad)');
+        topOuter.setAttribute('fill', 'url(#kraftGrad)');
+        topHole.setAttribute('fill', '#1a2530');
+        vizMat.innerText = 'Eco Kraft Paper';
+      }
+
+      // 2. Cap Overlay update
+      if (tutup.includes('Seng') || tutup.includes('Plastic')) {
+        endCap.classList.remove('opacity-0');
+        endCap.classList.add('opacity-100');
+      } else {
+        endCap.classList.remove('opacity-100');
+        endCap.classList.add('opacity-0');
+      }
+
+      // 3. Wall Thickness Visual adjustment
+      if (thicknessText.includes('5.0') || thicknessText.includes('8.0')) {
+        topHole.setAttribute('rx', '40');
+        topHole.setAttribute('ry', '9');
+      } else {
+        topHole.setAttribute('rx', '48');
+        topHole.setAttribute('ry', '11');
+      }
+
+      // Update Live Specs Display
+      vizSpecs.innerText = `ID: ${idText.split(' ')[0]} | Thick: ${thicknessText.split(' ')[0]}`;
+    }
+
+    function submitToWhatsApp() {
+      const text = document.getElementById('previewText').innerText;
+      const encoded = encodeURIComponent(text);
+      const url = `https://wa.me/6281234567890?text=${encoded}`;
+      window.open(url, '_blank');
+    }
+
+    function copyWhatsAppDraft() {
+      const text = document.getElementById('previewText').innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        const btn = event.currentTarget;
+        const originalText = btn.innerHTML;
+        btn.innerHTML = `<span class="material-symbols-outlined text-[12px]">check</span> Copied!`;
+        setTimeout(() => { btn.innerHTML = originalText; }, 2000);
+      });
+    }
+
+    // --- 2. SCROLL REVEAL ANIMATIONS (INTERSECTION OBSERVER) ---
+    document.addEventListener('DOMContentLoaded', () => {
+      updatePreview();
+
+      // Intersection Observer for standard element reveals
+      const observerOptions = {
+        root: null,
+        threshold: 0.12,
+        rootMargin: "0px 0px -50px 0px"
+      };
+
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            
+            // Check if section contains counters
+            const counters = entry.target.querySelectorAll('.counter, .counter-float');
+            counters.forEach(counter => runCounterAnimation(counter));
+            
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('.reveal-on-scroll').forEach(el => revealObserver.observe(el));
+
+      // --- 3. NUMERICAL COUNTER ANIMATION ---
+      let animatedCounters = new Set();
+
+      function runCounterAnimation(counterEl) {
+        if (animatedCounters.has(counterEl)) return;
+        animatedCounters.add(counterEl);
+
+        const isFloat = counterEl.classList.contains('counter-float');
+        const target = parseFloat(counterEl.getAttribute('data-target'));
+        const duration = 2000;
+        const startTime = performance.now();
+
+        function step(currentTime) {
+          const progress = Math.min((currentTime - startTime) / duration, 1);
+          // Ease-out expo curve
+          const easeProgress = 1 - Math.pow(2, -10 * progress);
+          const currentValue = target * easeProgress;
+
+          if (isFloat) {
+            counterEl.innerText = currentValue.toFixed(1);
+          } else {
+            counterEl.innerText = Math.floor(currentValue).toLocaleString('id-ID');
+          }
+
+          if (progress < 1) {
+            requestAnimationFrame(step);
+          } else {
+            counterEl.innerText = isFloat ? target.toFixed(1) : target.toLocaleString('id-ID');
+          }
+        }
+
+        requestAnimationFrame(step);
+      }
+
+      // --- 4. INTERACTIVE 3D TILT EFFECT ON CARDS ---
+      const tiltCards = document.querySelectorAll('.tilt-card');
+      tiltCards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          
+          const centerX = rect.width / 2;
+          const centerY = rect.height / 2;
+          
+          const rotateX = (y - centerY) / 20;
+          const rotateY = (centerX - x) / 20;
+
+          card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+        });
+
+        card.addEventListener('mouseleave', () => {
+          card.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)`;
+        });
+      });
+
+      // --- 5. FAQ ACCORDION LOGIC ---
+      const faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach(item => {
+        const btn = item.querySelector('.faq-btn');
+        const content = item.querySelector('.faq-content');
+        const arrow = item.querySelector('.icon-arrow');
+
+        btn.addEventListener('click', () => {
+          const isOpen = !content.classList.contains('hidden');
+
+          // Close all FAQ items for classic accordion behavior
+          faqItems.forEach(otherItem => {
+            otherItem.querySelector('.faq-content').classList.add('hidden');
+            otherItem.querySelector('.icon-arrow').style.transform = 'rotate(0deg)';
+            otherItem.classList.remove('border-amber-400');
+          });
+
+          // Toggle current
+          if (!isOpen) {
+            content.classList.remove('hidden');
+            arrow.style.transform = 'rotate(180deg)';
+            item.classList.add('border-amber-400');
+          }
+        });
+      });
+
+      // --- 6. MOBILE DRAWER NAVIGATION ---
+      const mobileBtn = document.getElementById('mobile-menu-btn');
+      const mobileDrawer = document.getElementById('mobile-drawer');
+      const menuIcon = document.getElementById('menu-icon');
+      const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+      mobileBtn.addEventListener('click', () => {
+        const isExpanded = !mobileDrawer.classList.contains('hidden');
+        if (isExpanded) {
+          mobileDrawer.classList.add('hidden');
+          menuIcon.innerText = 'menu';
+        } else {
+          mobileDrawer.classList.remove('hidden');
+          menuIcon.innerText = 'close';
+        }
+      });
+
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileDrawer.classList.add('hidden');
+          menuIcon.innerText = 'menu';
+        });
+      });
+
+      // --- 7. BACK TO TOP BUTTON & NAVBAR ACTIVE SCROLL SPY ---
+      const backToTopBtn = document.getElementById('backToTopBtn');
+      const sections = document.querySelectorAll('section[id], footer[id]');
+      const navLinks = document.querySelectorAll('.nav-link');
+
+      window.addEventListener('scroll', () => {
+        // Back to top visibility
+        if (window.scrollY > 400) {
+          backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+          backToTopBtn.classList.add('opacity-100');
+        } else {
+          backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+          backToTopBtn.classList.remove('opacity-100');
+        }
+
+        // Active Nav Tracking
+        let currentSectionId = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop - 120;
+          const sectionHeight = section.offsetHeight;
+          if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+            currentSectionId = section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${currentSectionId}`) {
+            link.classList.add('active');
+          }
+        });
+      });
+
+      backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
